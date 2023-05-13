@@ -13,7 +13,7 @@ public class MercuryLogin
 		driver.get("https://demo.guru99.com/test/newtours/login.php");
 		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(10, Timeunit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		driver.findElement(By.name("userName")).sendKeys("MANISHA.B");
 		System.out.println("Username submit successfully");
 		driver.findElement(By.name("password")).sendKeys("mani123");
