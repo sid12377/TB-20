@@ -13,6 +13,7 @@ public class MercuryRegistration
 		driver.get("https://demo.guru99.com/test/newtours/register.php");
 		
 		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		
 		driver.findElement(By.name("firstName")).sendKeys("Manisha");
 		System.out.println("First Name submit successfully");
